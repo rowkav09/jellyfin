@@ -55,7 +55,7 @@ jobs:
           git config user.name "jellyfin-bot"
           git config user.email "team@jellyfin.org"
           git checkout ${{ env.TAG_BRANCH }}
-          git commit -am "Bump version to ${{ env.NEXT_VERSION }}"
+          git commit -am "Bump version to ${{ env.NEXT_VERSION }}" -m "Co-authored-by: rowkav0809 <rowkav0808@highgateschool.org.uk>"
           git push origin ${{ env.TAG_BRANCH }}
 
   manual_bump_version:
@@ -78,5 +78,5 @@ jobs:
           git config user.name "jellyfin-bot"
           git config user.email "team@jellyfin.org"
           git checkout ${{ env.TAG_BRANCH }}
-          git commit -am "Bump version to ${{ env.NEXT_VERSION }}"
+          git commit -am "Bump version to ${{ env.NEXT_VERSION }}" -m "Co-authored-by: rowkav0809 <rowkav0808@highgateschool.org.uk>"
           git push origin ${{ env.TAG_BRANCH }}
